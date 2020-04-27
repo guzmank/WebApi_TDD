@@ -13060,11 +13060,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\inetpub\\Github.com\\WebApi_TEST\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\inetpub\\Github.com\\WebApi_TDD\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\inetpub\\Github.com\\WebApi_TEST\\WebApi\\WebApi.csproj",
+      "projectPath": "C:\\inetpub\\Github.com\\WebApi_TDD\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\Kelvin Guzmán\\.nuget\\packages\\",
-      "outputPath": "C:\\inetpub\\Github.com\\WebApi_TEST\\WebApi\\obj\\",
+      "outputPath": "C:\\inetpub\\Github.com\\WebApi_TDD\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13083,8 +13083,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\inetpub\\Github.com\\WebApi_TEST\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\inetpub\\Github.com\\WebApi_TEST\\Domain\\Domain.csproj"
+            "C:\\inetpub\\Github.com\\WebApi_TDD\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\inetpub\\Github.com\\WebApi_TDD\\Domain\\Domain.csproj"
             }
           }
         }

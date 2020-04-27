@@ -3787,11 +3787,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\inetpub\\Github.com\\WebApi_TEST\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\inetpub\\Github.com\\WebApi_TDD\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\inetpub\\Github.com\\WebApi_TEST\\Data\\Data.csproj",
+      "projectPath": "C:\\inetpub\\Github.com\\WebApi_TDD\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\Kelvin Guzmán\\.nuget\\packages\\",
-      "outputPath": "C:\\inetpub\\Github.com\\WebApi_TEST\\Data\\obj\\",
+      "outputPath": "C:\\inetpub\\Github.com\\WebApi_TDD\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
