@@ -1,0 +1,197 @@
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile not available. Using 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\4.0.30319.0\AutoGenKeys\S-1-5-82-621211465-983036483-4025745150-931732376-428829439\DataProtection' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: C:\inetpub\API_Test2\WebApi\bin\Release\netcoreapp2.2\publish
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:94/api/albums/GetAlbums/0f078d0e-6602-4375-a088-ab8d00facdd1  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'WebApi.Controllers.AlbumsController.GetAlbumByIdAsync (WebApi)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetAlbumByIdAsync", controller = "Albums"}. Executing controller action with signature System.Threading.Tasks.Task`1[Domain.Models.AlbumDto] GetAlbumByIdAsync(System.Guid) on controller WebApi.Controllers.AlbumsController (WebApi).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method WebApi.Controllers.AlbumsController.GetAlbumByIdAsync (WebApi) - Validation state: Valid
+dbug: WebApi.Controllers.AlbumsController[0]
+      'WebApi.Controllers.AlbumsController+<GetAlbumByIdAsync>d__9' has been invoked
+info: WebApi.Controllers.AlbumsController[0]
+      The GetAlbumByIdAsync have been retrieved successfully.
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.6-servicing-10079 initialized 'WebApiDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[@__albumId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[AlbumPriceID], [x].[ArtistID], [x].[CopyRightInfo], [x].[CoverPath], [x].[MusicTypeID], [x].[Name], [x].[Released], [x].[Review]
+      FROM [ALBUM] AS [x]
+      WHERE [x].[UniqueID] = @__albumId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__album_ArtistId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[Name]
+      FROM [ARTIST] AS [x]
+      WHERE [x].[UniqueID] = @__album_ArtistId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__album_MusicTypeId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[Name]
+      FROM [MUSIC_TYPE] AS [x]
+      WHERE [x].[UniqueID] = @__album_MusicTypeId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__album_AlbumPriceId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[Price]
+      FROM [ALBUM_PRICE] AS [x]
+      WHERE [x].[UniqueID] = @__album_AlbumPriceId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__album_UniqueId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT [x].[UniqueID], [x].[AlbumID], [x].[Name], [x].[Number], [x].[Popularity], [x].[SongPriceID], [x].[Time]
+      FROM [SONG] AS [x]
+      WHERE [x].[AlbumID] = @__album_UniqueId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__album_UniqueId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT [x].[UniqueID], [x].[AlbumID], [x].[RatingTypeID]
+      FROM [ALBUM_RATING] AS [x]
+      WHERE [x].[AlbumID] = @__album_UniqueId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__albumRating_RatingTypeId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[Name], [x].[Value]
+      FROM [RATING_TYPE] AS [x]
+      WHERE [x].[UniqueID] = @__albumRating_RatingTypeId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__albumRating_RatingTypeId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[Name], [x].[Value]
+      FROM [RATING_TYPE] AS [x]
+      WHERE [x].[UniqueID] = @__albumRating_RatingTypeId_0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method WebApi.Controllers.AlbumsController.GetAlbumByIdAsync (WebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 647.1483ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'Domain.Models.AlbumDto'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action WebApi.Controllers.AlbumsController.GetAlbumByIdAsync (WebApi) in 1052.9224ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'WebApi.Controllers.AlbumsController.GetAlbumByIdAsync (WebApi)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1136.4963ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:94/api/albums/GetAlbums/0f078d0e-6602-4375-a088-ab8d00facdd1  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'WebApi.Controllers.AlbumsController.GetAlbumByIdAsync (WebApi)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetAlbumByIdAsync", controller = "Albums"}. Executing controller action with signature System.Threading.Tasks.Task`1[Domain.Models.AlbumDto] GetAlbumByIdAsync(System.Guid) on controller WebApi.Controllers.AlbumsController (WebApi).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method WebApi.Controllers.AlbumsController.GetAlbumByIdAsync (WebApi) - Validation state: Valid
+dbug: WebApi.Controllers.AlbumsController[0]
+      'WebApi.Controllers.AlbumsController+<GetAlbumByIdAsync>d__9' has been invoked
+info: WebApi.Controllers.AlbumsController[0]
+      The GetAlbumByIdAsync have been retrieved successfully.
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.6-servicing-10079 initialized 'WebApiDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__albumId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[AlbumPriceID], [x].[ArtistID], [x].[CopyRightInfo], [x].[CoverPath], [x].[MusicTypeID], [x].[Name], [x].[Released], [x].[Review]
+      FROM [ALBUM] AS [x]
+      WHERE [x].[UniqueID] = @__albumId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__album_ArtistId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[Name]
+      FROM [ARTIST] AS [x]
+      WHERE [x].[UniqueID] = @__album_ArtistId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__album_MusicTypeId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[Name]
+      FROM [MUSIC_TYPE] AS [x]
+      WHERE [x].[UniqueID] = @__album_MusicTypeId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__album_AlbumPriceId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[Price]
+      FROM [ALBUM_PRICE] AS [x]
+      WHERE [x].[UniqueID] = @__album_AlbumPriceId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__album_UniqueId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT [x].[UniqueID], [x].[AlbumID], [x].[Name], [x].[Number], [x].[Popularity], [x].[SongPriceID], [x].[Time]
+      FROM [SONG] AS [x]
+      WHERE [x].[AlbumID] = @__album_UniqueId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__album_UniqueId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT [x].[UniqueID], [x].[AlbumID], [x].[RatingTypeID]
+      FROM [ALBUM_RATING] AS [x]
+      WHERE [x].[AlbumID] = @__album_UniqueId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__albumRating_RatingTypeId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[Name], [x].[Value]
+      FROM [RATING_TYPE] AS [x]
+      WHERE [x].[UniqueID] = @__albumRating_RatingTypeId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__albumRating_RatingTypeId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[Name], [x].[Value]
+      FROM [RATING_TYPE] AS [x]
+      WHERE [x].[UniqueID] = @__albumRating_RatingTypeId_0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method WebApi.Controllers.AlbumsController.GetAlbumByIdAsync (WebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 14.7753ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'Domain.Models.AlbumDto'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action WebApi.Controllers.AlbumsController.GetAlbumByIdAsync (WebApi) in 16.8285ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'WebApi.Controllers.AlbumsController.GetAlbumByIdAsync (WebApi)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 22.1059ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:94/api/albums/GetAlbums/0f078d0e-6602-4375-a088-ab8d00facdd1  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'WebApi.Controllers.AlbumsController.GetAlbumByIdAsync (WebApi)'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetAlbumByIdAsync", controller = "Albums"}. Executing controller action with signature System.Threading.Tasks.Task`1[Domain.Models.AlbumDto] GetAlbumByIdAsync(System.Guid) on controller WebApi.Controllers.AlbumsController (WebApi).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method WebApi.Controllers.AlbumsController.GetAlbumByIdAsync (WebApi) - Validation state: Valid
+dbug: WebApi.Controllers.AlbumsController[0]
+      'WebApi.Controllers.AlbumsController+<GetAlbumByIdAsync>d__9' has been invoked
+info: WebApi.Controllers.AlbumsController[0]
+      The GetAlbumByIdAsync have been retrieved successfully.
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.6-servicing-10079 initialized 'WebApiDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__albumId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[AlbumPriceID], [x].[ArtistID], [x].[CopyRightInfo], [x].[CoverPath], [x].[MusicTypeID], [x].[Name], [x].[Released], [x].[Review]
+      FROM [ALBUM] AS [x]
+      WHERE [x].[UniqueID] = @__albumId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__album_ArtistId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[Name]
+      FROM [ARTIST] AS [x]
+      WHERE [x].[UniqueID] = @__album_ArtistId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__album_MusicTypeId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[Name]
+      FROM [MUSIC_TYPE] AS [x]
+      WHERE [x].[UniqueID] = @__album_MusicTypeId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__album_AlbumPriceId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[Price]
+      FROM [ALBUM_PRICE] AS [x]
+      WHERE [x].[UniqueID] = @__album_AlbumPriceId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__album_UniqueId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT [x].[UniqueID], [x].[AlbumID], [x].[Name], [x].[Number], [x].[Popularity], [x].[SongPriceID], [x].[Time]
+      FROM [SONG] AS [x]
+      WHERE [x].[AlbumID] = @__album_UniqueId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__album_UniqueId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT [x].[UniqueID], [x].[AlbumID], [x].[RatingTypeID]
+      FROM [ALBUM_RATING] AS [x]
+      WHERE [x].[AlbumID] = @__album_UniqueId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__albumRating_RatingTypeId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[Name], [x].[Value]
+      FROM [RATING_TYPE] AS [x]
+      WHERE [x].[UniqueID] = @__albumRating_RatingTypeId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__albumRating_RatingTypeId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [x].[UniqueID], [x].[Name], [x].[Value]
+      FROM [RATING_TYPE] AS [x]
+      WHERE [x].[UniqueID] = @__albumRating_RatingTypeId_0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method WebApi.Controllers.AlbumsController.GetAlbumByIdAsync (WebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 22.7216ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'Domain.Models.AlbumDto'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action WebApi.Controllers.AlbumsController.GetAlbumByIdAsync (WebApi) in 23.7955ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'WebApi.Controllers.AlbumsController.GetAlbumByIdAsync (WebApi)'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 24.2585ms 200 application/json; charset=utf-8

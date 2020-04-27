@@ -1,0 +1,11 @@
+C:\inetpub\Home_ReactRedux\DataAccess\bin\Release\netcoreapp2.2\DataAccess.deps.json
+C:\inetpub\Home_ReactRedux\DataAccess\bin\Release\netcoreapp2.2\DataAccess.runtimeconfig.json
+C:\inetpub\Home_ReactRedux\DataAccess\bin\Release\netcoreapp2.2\DataAccess.runtimeconfig.dev.json
+C:\inetpub\Home_ReactRedux\DataAccess\bin\Release\netcoreapp2.2\DataAccess.dll
+C:\inetpub\Home_ReactRedux\DataAccess\bin\Release\netcoreapp2.2\DataAccess.pdb
+C:\inetpub\Home_ReactRedux\DataAccess\obj\Release\netcoreapp2.2\DataAccess.csproj.CoreCompileInputs.cache
+C:\inetpub\Home_ReactRedux\DataAccess\obj\Release\netcoreapp2.2\DataAccess.AssemblyInfoInputs.cache
+C:\inetpub\Home_ReactRedux\DataAccess\obj\Release\netcoreapp2.2\DataAccess.AssemblyInfo.cs
+C:\inetpub\Home_ReactRedux\DataAccess\obj\Release\netcoreapp2.2\DataAccess.dll
+C:\inetpub\Home_ReactRedux\DataAccess\obj\Release\netcoreapp2.2\DataAccess.pdb
+C:\inetpub\Home_ReactRedux\DataAccess\obj\Release\netcoreapp2.2\DataAccess.csprojAssemblyReference.cache
